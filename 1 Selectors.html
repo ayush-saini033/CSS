@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        h1.heading{
+            color: violet;
+            /* color: transparent; */
+        }
+        p#para{
+            background-color: gray;
+        }
+        a{
+            color: black;
+            background-color: blueviolet;
+        }
+        a:hover{
+            background-color: burlywood;
+        }
+        #btn{
+            background-color: chocolate;
+        }
+        /*less specifity */
+        /* button:hover{
+            background-color: blueviolet;
+        } */
+        #btn:hover{
+            background-color: blueviolet;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="heading" id="para">World Best CSS Course</h1>
+    <p id="para" class="heading">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequatur, delectus.</p>
+    <a href="http://google.com">Google</a>
+    <button id="btn">Googole</button>
+</body>
+</html>

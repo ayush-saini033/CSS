@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: #212121;
+            color: #fff;
+            display: grid;
+            place-items: center;
+        }
+        .hero{
+            width: 50%;
+        }
+        h1{
+            text-transform: uppercase;
+            text-shadow: 2px 2px 15px blue;
+        }
+        p{
+            text-align: center;
+            text-align: left;
+            text-align: right;
+            letter-spacing: 1.5px;
+            word-spacing: 1.5px;
+            line-height: 1.5;
+        }
+        /* pseudo selector */
+        p::first-letter{
+            font-size: 49px;
+        }
+        a{
+            text-decoration: none;
+            color: wheat;
+            text-decoration: underline;
+            /* text-decoration-line: line-through; */
+            text-decoration-style: dotted;
+            text-decoration-style: wavy;
+        }
+
+    </style>
+</head>
+<body>
+    <section class="hero">
+        <h1>Font Properties</h1>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iste in ut, quo illum, amet repellat, qui eaque doloribus sit sint cupiditate corrupti? Labore dolor reiciendis soluta placeat neque dignissimos molestias! Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, velit?</p>
+    <a href="https://google.com">Google</a>
+    </section>
+</body>
+</html>
