@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        body{
+            background-color: #212121;
+        }
+        /* descendent selector */
+        /* .selection-elements .container{
+            color: green;
+        } */
+        /* parent to child */
+        /* descendent selector */
+        ul p{
+            color: purple;
+        }
+
+        /* child selector */
+        ul li {
+            color: blue;
+        }
+        /* > this sign representb the direct relation */
+        .content > ul > li{
+            color: yellowgreen;
+        }
+
+        .content ul p + li{
+            background-color: rgb(141, 2, 25);
+        }
+
+        .content ul p ~ li {
+            color: rgb(255, 146, 146);
+        }
+
+    </style>
+  </head>
+  <body>
+    <section class="hero-sectiopn selection-elements">
+      <div class="container">
+        <div class="grid grid-two-column">
+            <div class="content">
+          <ul>
+            <p>I am first</p>
+            <li>inside</li>
+            <li>
+              inside
+              <ol>
+                <li>nested</li>
+                <ul>
+                  <li>deep nested</li>
+                </ul>
+                <li>nested</li>
+              </ol>
+            </li>
+            <li>inside</li>
+            <p>i am last</p>
+            <li>last child</li>
+          </ul>
+          <li>outside</li>
+        </div>
+      </div>
+    </div>
+    </section>
+  </body>
+</html>

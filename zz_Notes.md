@@ -18,6 +18,13 @@
 ## Margin
 - Adjacent sibling margins consider only larger
 
+# selectors
+- child selctor `>`
+- adjacent sibling `+`
+- general sibling selector `~`
+- descendent selector ` `
+- universal selector `*`
+
 # Useful Websites
 - Color Hunt
 - Google Fonts
