@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container-1 ul p:first-child{
+            background-color: violet;
+        }
+        .container-2 li:first-child{
+            color: purple;
+        }
+        .container-2 p:last-child{
+            background-color: green;
+        }
+        .container-1 li:nth-of-type(1){
+            background-color: gray;
+        }
+        .container-2 li:first-of-type{
+            background-color: red;
+        }
+        .container-2 li:last-of-type{
+            background-color: chartreuse;
+        }
+        .container-2 li:nth-of-type(3){
+            background-color: blue;
+        }
+        .container-1 li:nth-child(3){
+            background-color: yellowgreen;
+        }
+    </style>
+</head>
+<body>
+    <section class="hero-section">
+        <div class="container">
+            <div class="grid-two-column">
+                <div class="container-1">
+                    <ul>
+                        <p>I am last</p>
+                        <li>Home</li>
+                        <li>Home</li>
+                        <li>Home</li>
+                        <li>Home</li>
+                        <li>Home</li>
+                        <p>I am Last</p>
+                    </ul>
+                </div>
+                <div class="container-2">
+                        <li>Home</li>
+                        <li>Home</li>
+                        <li>Home</li>
+                        <li>Home</li>
+                        <li>Home</li>
+                        <p>I am Last</p>
+                </div>
+                <div class="container-3">
+                    <ul class="testing">
+                        <li class="p-class">Home</li>
+                        <li class="p-class">Home</li>
+                        <li class="p-class">Home</li>
+                        <li class="p-class">Home</li>
+                        <li class="p-class">Home</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
