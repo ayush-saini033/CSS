@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            display: grid;
+            place-items: center;
+            background-color: #212121;
+        }
+        a{
+            text-decoration: none;
+            font-size: 20px;
+            background-color: #fff;
+            display: inline-block;
+            width: 100px;
+            height:30px;
+            color: black;
+            border-radius: 5px;
+            text-align: center;
+            
+            transition-property: width;
+            /* transition-property: height; */
+            transition-duration: 0.5s;
+            transition-timing-function: ease;
+            transition-delay: 0.2s;
+            transition-property: width, background-color;
+            transition: all 0.3s linear;
+        }
+        a:hover{
+            background-color: gold;
+            width: 120px;
+            /* height: 35px; */
+        }
+        img{
+            display: block;
+            margin-top: 400px;
+            transition: all 1s linear;
+        }
+        img:hover{
+            margin-left: 60px;
+            scale: 2;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <a href="#">Click me</a>
+        <img src="24Ironman.png" alt="hero" width="200">
+    </section>
+</body>
+</html>
