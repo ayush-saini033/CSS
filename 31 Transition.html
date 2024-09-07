@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body{
+            background-color: #2b3033;
+        }
+
+        .container{
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 40px;
+            padding: 50px;
+        }
+        .box{
+            width: 100px;
+            aspect-ratio: 1;
+            background-color: #fff;
+            border-radius: 50%;
+            background-color: purple;
+            box-shadow: 0 0 5px 15px rgb(141, 21, 141);
+            transition: all 2s;
+        }
+        .box:nth-child(1):hover{
+            translate: 90vw 0;
+            transition-timing-function: ease;
+        }
+        .box:nth-child(2):hover{
+            transform:  translateX(90vw);
+            transition-timing-function: ease ease-out;
+        }
+        .box:nth-child(3):hover{
+            transform: translateX(90vw);
+            transition-timing-function: ease-in-out;
+        }
+        .box:nth-child(4):hover{
+            transform: translateX(90vw);
+            transition-timing-function: linear;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+</body>
+</html>
