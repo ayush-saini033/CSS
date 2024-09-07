@@ -18,15 +18,36 @@
 ## Margin
 - Adjacent sibling margins consider only larger
 
-# selectors
+## selectors
 - child selctor `>`
 - adjacent sibling `+`
 - general sibling selector `~`
 - descendent selector ` `
 - universal selector `*`
 
+## Flex Box
+### Parent properties
+- `flex-direction: row;` the horizontal will be the main-axis
+- items display in a row (flex direction property`s default is row)
+- Justify content (justify-content): justify-content aligns flex items along the main axis
+- included `flex-start, flex-end, flex-center, flex-stretch` and `flex-baseline`
+- flex-wrap :- included `nowrap (default), wrap, wrap-reverse`
+- align-content :- included `flex-start, flex-end, center, space-between, space-around`
+- align-items
+- align-self
+### Child properties
+- flex-grow
+- flex-shrink
+- flex-basis
+- flex (Shorthand for flex-grow, flex-shrink and flex-basis)
+
+### NOTE 
+> justify-content :- for row
+> align-tems :- for column
+
 # Useful Websites
 - Color Hunt
 - Google Fonts
 - Da Fonts
 - pixcap for images
+- Font Awesome
