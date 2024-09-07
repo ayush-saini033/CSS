@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        body{
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #2c3639;
+        }
+        .grid-container{
+            min-width: 80%;
+            margin: 100px auto;
+            background-color: #dcd7c9;
+            color: #fff;
+            box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+            display: grid;
+            grid-template-rows: 250px 250px;
+            /* shortcut */
+            grid-template-rows: repeat(2, 250px);
+            grid-template-columns: 250px 250px 250px;
+            grid-template-columns: 250px 250px 1fr;
+            grid-template-columns: 1fr 1fr 1fr;
+            /* shortcut */
+            grid-template-columns: repeat(3,1fr);
+            grid-template-columns: 1fr min-content repeat(1,1fr);
+            grid-template-columns: 1fr max-content repeat(1,1fr);
+            grid-template-columns: 1fr minmax(250px,1fr) repeat(1, 1fr);
+            grid-template-columns: repeat(auto-fill, minmax(250px,1fr));
+            grid-template-columns: repeat(auto-fit,minmax(250,1fr));
+            grid-template-columns: repeat(3,minmax(250px ,1fr));
+
+            /* gaps */
+            /* grid-gap: 50px; */
+            /* row-gap: 50px;
+            column-gap: 50px; */
+            gap:50px;
+
+            grid-auto-rows: 250px;
+
+            align-items: center;
+            /* align-items: self-start;
+            align-items: self-end;
+            align-items: stretch; */
+
+            /* justiy horizontally */
+            justify-items: self-start;
+            /* justify-items: center; */
+            justify-items: end;
+            justify-items: stretch;
+
+        }
+
+        @media (width < 1200px){
+            .grid-container{
+                grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            }
+        }
+
+        .item{
+            display: grid;
+            place-items: center;
+            text-transform: uppercase;
+            font-size: 20px;
+            letter-spacing: 2px;
+            font-weight: bold;
+        }
+        .item-1{
+            background-color: rgb(231, 86, 110);
+            /* grid-row-start: 2;
+            grid-row-end: 3; */
+            /* grid-row: 2/3; */
+            /* grid-column-start: 2;
+            grid-column-end: 3; */
+            /* grid-column: 2/3; */
+
+            /* more shortcut */
+            /* r-s/c-s/r-e/c-e */
+            /* grid-area: 2/2/3/3; */
+        }
+        .item-2{
+            background-color: rgb(25, 215, 215);
+        }
+        .item-3{
+            background-color: violet;
+            /* grid-row: 1/2; */
+            /* grid-column: 2/4; */
+        }
+        .item-4{
+            background-color: yellowgreen;
+        }
+        .item-5{
+            background-color: purple;
+        }
+        .item-6{
+            background-color: rgb(56, 56, 251);
+        }
+    </style>
+</head>
+<body>
+    <div class="grid-container">
+        <div class="item item-1">item-1</div>
+        <div class="item item-2">item-2, world best css course</div>
+        <div class="item item-3">item-3</div>
+        <div class="item item-4">item-4</div>
+        <div class="item item-5">item-5</div>
+        <div class="item item-6">item-6</div>
+    </div>
+</body>
+</html>
