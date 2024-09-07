@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body{
+            background-color: #2b3033;
+        }
+
+        .container{
+            width: 100vw;
+            height: 100vh;
+        }
+
+        h1{
+            padding: 50px;
+            color: #fff;
+            font-size: 48px;
+        }
+
+        .box{
+            width: 100px;
+            height: 100px;
+            background-color: #4861ec;
+            box-shadow: 0 0 0px 15px #353f6d;
+            margin: 50px;
+            display: inline-block;
+            border-radius: 50%;
+            animation-name: lefttoright;
+            animation-duration: 3s;
+            animation-timing-function: linear;
+            animation-iteration-count: 5;
+            /* animation-direction: alternate-reverse; */
+            animation-direction: alternate;
+        }
+
+        @keyframes lefttoright{
+            /* from{
+                translate: 0%;
+            }
+            to{
+                translate: calc(90vw - 100px);
+            } */
+             /* ********************************************** */
+
+            /* 0%{
+                translate: 0%;
+            }
+            50%{
+                translate: 5vw 50vh;
+            }
+            100%{
+                translate: calc(90vw - 100px);
+            } */
+
+            /* ********************************************* */
+
+            0%{
+                background-color: #ffbb5cb5;
+                transform: translate(200px, 0%);
+            }
+            25%{
+                background-color: #ffcb49;
+                transform: translate(90vw - 10%);
+            }
+            50%{
+                background-color: #000000;
+                transform: translate(calc(90vw - 10%), 500px);
+            }
+            75%{
+                background-color: #fcbf49;
+                transform: translate(20%, 500px);
+            }
+            100%{
+                background-color: #ffbc5cb5;
+                transform: translate(20%, 0%);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>CSS Animation</h1>
+        <div class="box"></div>
+    </div>
+</body>
+</html>
