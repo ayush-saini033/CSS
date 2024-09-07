@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        body{
+            background-color: hsl(0,0%,94%);
+            background-color: #2b3033;
+        }
+
+        .container{
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 30px;
+            box-shadow: inset 0 0 0 5px #4861ec;
+        }
+        
+        .box{
+            width: 250px;
+            height: 250px;
+            background-color: #4861ec;
+            box-shadow: 0 0 0px 15px #353f6d;
+            margin: 20px;
+            color: #fff;
+            font-size: 2rem;
+            text-transform: capitalize;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .container img{
+            width: 100%;
+            width: 30%;
+            height: auto;
+            transition: all 0.5s linear;
+        }
+        
+        img:hover{
+            transform: translateX(200px);
+            transform: translateY(-200px);
+            /* translate: 500px 500px; */
+            scale: 1.2;
+            transform: scaleX(2);
+            transform: scale(2,2);
+            transform: rotate(360deg);
+            filter:grayscale();
+            transform: skew(45deg);
+            rotate: 20deg;
+            transform-origin: left;
+        }
+    </style>
+</head>
+<body>
+    <din class="container">
+        <img class="box" src="24Ironman.png" alt="hero">
+    </din>
+</body>
+</html>
