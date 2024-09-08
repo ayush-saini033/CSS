@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        :root{
+            --main-color: #0062ff;
+            --support-color: #080a0c;
+            --font-color: #fff;
+            --bg-color: #080a0c;
+            --btn-bg-color: #fff;
+        }
+        body{
+            background-color: var(--bg-color);
+            color: var(--font-color);
+            height: 100vh;
+        }
+
+        .container{
+            height: 100vh;
+            max-width: 1320px;
+            padding: 64px 0;
+            margin: 0 auto;
+            display: grid;
+            place-items: center;
+        }
+
+        .grid{
+            display: grid;
+            align-items: center;
+            gap: 6.4rem;
+        }
+
+        .grid-two-column{
+            grid-template-columns: repeat(2,1fr);
+        }
+
+        .hero-content h1{
+            text-align: left;
+            font-size: 54px;
+        }
+
+        .hero-content p{
+            font-size: 18px;
+            letter-spacing: 1px;
+            margin: 2rem 0 4rem 0;
+        }
+
+        img{
+            width: 100%;
+            height: auto;
+        }
+
+        .hero-content{
+            background-color: var(--bg-color);
+            border: 5px solid var(--font-color);
+            display: inline-block;
+            padding: 10px 32px;
+            text-transform: capitalize;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 24px;
+            font-weight: bold;
+        }
+        a{
+            color: var(--font-color);
+            text-decoration: none;
+            /* background-color: wheat;
+            width: 1500px;
+            height: 40px; */
+        }
+        h1{
+            /* border-top: 5px solid rgb(0, 150, 150);
+            border-bottom: 5px solid rgb(0, 150, 150); */
+            /* border-left: 5px solid yellowgreen;
+            border-right: 5px solid yellowgreen; */
+            border-inline: 5px solid yellowgreen;
+            border-block: 5px solid rgb(0,150,150);
+        }
+
+        /* Nesting CSS */
+        .hero-content{
+            & h1{
+                text-align: left;
+                font-size: 54px;
+                color: lightblue;
+                writing-mode: vertical-lr;
+                /* position: absolute;
+                top: 50%; */
+                &::before{
+                    content: "*";
+                }
+                &:hover{
+                    background-color: #0062ff;
+                }
+            }
+            p{
+                font-size: 18px;
+                letter-spacing: 1px;
+                margin: 2rem 0 4rem 0;
+                color: violet;
+            }
+        }
+    </style>
+</head>
+<body>
+    <section class="hero-section">
+        <div class="container">
+            <div class="grid grid-two-column">
+                <div class="hero-content">
+                    <h1>World Best CSS Course</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem deleniti id aspernatur cupiditate ducimus nostrum eos maxime repellendus iure impedit dolore vitae sequi dolorem qui ratione optio veniam commodi reprehenderit temporibus, sapiente quod totam dolorum. Rerum enim alias ipsam sint dolorum nostrum nobis animi, laboriosam debitis molestiae saepe. Quasi possimus suscipit, iusto ullam similique error mollitia reprehenderit corporis cumque sint!</p>
+                    <a href="#">Watch Now</a>
+                </div>
+                <div hero-image>
+                    <figure>
+                        <img src="24Ironman.png" alt="hero">
+                    </figure>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
