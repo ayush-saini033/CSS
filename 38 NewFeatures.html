@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background-color: #212121;
+            color: #fff;
+        }
+        .container-1{
+            margin-top: 50px;
+            display: flex;
+            /* gap: 50px; */
+            justify-content: space-between;
+        }
+        
+        .grid a{
+            text-decoration: none;
+            color: white;
+            margin-left: 50px;
+            display: inline-block;
+            margin-top: 40px;
+        }
+        nav ul{
+            width: 50vw;
+            margin-top: 40px;
+            list-style: none;
+            display: flex;
+            /* gap: 70px; */
+        }
+        nav ul li{
+            /* justify-content: space-around; */
+            font-size: 2rem;
+            border: 1px solid violet;
+            /* padding-left: 40px; */
+        }
+        nav ul :not(li:first-child) {
+            padding-left: 40px;
+        }
+        .parent:has([type="checkbox"]:checked) label{
+            color: gold;
+        }
+        input[type="checkbox"]{
+            accent-color: green;
+            width: 20px;
+            aspect-ratio: 1;
+        }
+        p{
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+    <header class="container-1">
+        <div class="grid">
+            <a href="#">Click me</a>
+        </div>
+        <nav>
+            <ul>
+                <li>Home</li>
+                <li>Home</li>
+                <li>Home</li>
+                <li>Home</li>
+                <li>Home</li>
+            </ul>
+        </nav>
+    </header>
+    <setion class="hero">
+        <div class="container-2">
+            <div class="grid">
+                <div class="content">
+                    <p>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut quasi nostrum laudantium delectus ratione velit perspiciatis labore asperiores totam at alias quam ea, aliquam consequuntur nam molestiae odio, voluptate quae possimus modi a dolorem! Dicta harum ratione doloribus sit. Reprehenderit, harum nemo. Non voluptates natus modi distinctio, iste nihil dolorem.
+                    </p>
+                    <div class="parent">
+                        <input type="checkbox" id="checkbox">
+                        <label for="checkbox">Select the Box</label>
+                    </div>
+                </div>
+
+                <div class="hero-image">
+                    <img src="24Ironman.png" alt="hero">
+                </div>
+            </div>
+        </div>
+    </setion>
+</body>
+</html>
