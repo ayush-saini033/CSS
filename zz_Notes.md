@@ -45,6 +45,10 @@
 > justify-content :- for row
 > align-tems :- for column
 
+## Level Of Specificcity
+- 0.0.0.0.0
+> `Element < Class < Id < Inline < !Important` 
+
 # Useful Websites
 - Color Hunt
 - Google Fonts
